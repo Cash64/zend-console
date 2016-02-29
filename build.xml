@@ -88,7 +88,6 @@
   <exec executable="${phploc}" taskname="phploc">
    <arg value="--count-tests" />
    <arg path="${basedir}/src" />
-   <arg path="${basedir}/test" />
   </exec>
 
   <property name="phploc.done" value="true"/>
@@ -105,7 +104,6 @@
    <arg value="--log-xml" />
    <arg path="${basedir}/build/logs/phploc.xml" />
    <arg path="${basedir}/src" />
-   <arg path="${basedir}/test" />
   </exec>
 
   <property name="phploc.done" value="true"/>
@@ -160,7 +158,6 @@
    <arg value="--extensions=php" />
    <arg value="--ignore=autoload.php" />
    <arg path="${basedir}/src" />
-   <arg path="${basedir}/test" />
   </exec>
 
   <property name="phpcs.done" value="true"/>
@@ -177,7 +174,6 @@
    <arg value="--extensions=php" />
    <arg value="--ignore=autoload.php" />
    <arg path="${basedir}/src" />
-   <arg path="${basedir}/test" />
   </exec>
 
   <property name="phpcs.done" value="true"/>
